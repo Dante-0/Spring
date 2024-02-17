@@ -1,0 +1,42 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+	<bean name="st1" class="com.springproject.collection.Student">
+	
+	<property name="name" value="Coder" />
+	
+	<property name="address">
+		<list>
+			<value>India</value>
+			<value>USA</value>
+		</list>
+		
+		
+	</property>
+	
+	<property name="phone">
+		<set>
+			<value>1234</value>
+			<value>4856</value>
+		</set>
+		
+	</property>
+	
+	<property name="course">
+		<map>
+			<entry key = "Java" value="2months"/>
+			<entry key = "C++" value="1month"></entry>
+		</map>
+	</property>
+	
+
+	</bean>
+	
+</beans>
